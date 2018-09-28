@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Android News App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recent_news">RECENT NEWS</string>
+    <string name="category">CATEGORY</string>
+
+    <!--__________________________-->
+
+    <string name="news_1_title">
+        Amazon’s gadget battle with Google could upend its Alexa allies
+    </string>
+    <string name="news_1_date">
+        12.04.18
+    </string>
+    <string name="news_1_text">
+        TP-Link has been enjoying a very good run on Amazon.com. Two of the companys Alexa-enabled smart plugs have dominated Amazons electric
+        plugs best-seller list for most of this year, helping the Chinese manufacturer sell thousands of plugs.
+        Unfortunately for TP-Link, its about to get fresh competition from Amazon itself. The e-commerce giant last month held a product launch event in Seattle,
+        where it unveiled a long list of new devices including the Alexa-enabled Amazon Smart Plug. The plug goes on sale for $25 next week, a few bucks more than TP-Links plugs.
+    </string>
+    <!--<string name="news_1_image_src">
+
+    </string>-->
+
+    <!--__________________________-->
+
+    <string name="news_2_title">
+        Gareth Southgate says Joe Hart could still earn England recall
+    </string>
+    <string name="news_2_date">
+        04.10.18
+    </string>
+    <string name="news_2_text">
+        There was no space for Burnley keeper Hart in Southgate 25-man squad for the upcoming matches against Croatia and Spain in the UEFA Nations League.
+        Instead, Southgate selected uncapped duo Marcus Bettinelli and Alex McCarthy along with Jack Butland and Jordan Pickford as his goalkeeping options.
+        A series of impressive displays for the Clarets has seen Hart keep his place in goal ahead of fellow club team-mates Tom Heaton and Nick Pope.
+    </string>
+    <!--<string name="news_2_image_src">
+
+    </string>-->
+
+    <!--__________________________-->
+
+    <string name="news_3_title">
+        Here come Wi-Fi 4, 5 and 6 in plan to simplify 802.11 networking names
+    </string>
+    <string name="news_3_date">
+        05.10.18
+    </string>
+    <string name="news_3_text">
+        The idea is to be clearer about whats better and what your phone or home router can handle without sounding as much like an electronic engineer.
+        Not that theres anything wrong with electronic engineers, but even techies can have a hard time remembering that IEEE 802.11 means wireless networks,
+        IEEE 1394 governs FireWire data connections, and IEEE 802.3 is about Ethernet network connections.
+        The underlying Wi-Fi specifications will keep their IEEE technical names, of course. The Wi-Fi Alliance comes later in the development process,
+        just before the point when consumers get involved, smoothing the way with compatibility tests that let device manufacturers put reassuring certification
+        logos on their product boxes.
+    </string>
+    <!--<string name="news_3_image_src">
+
+    </string>-->
+    <!--__________________________-->
+
+    <string name="news_4_title">
+        Uber joins Lyft in offering rides to voters for the midterm elections
+    </string>
+    <string name="news_4_date">
+        15.08.18
+    </string>
+    <string name="news_4_text">
+        The ride-hailing company announced Thursday that its offering free rides to the polls for those people who say transportation barriers are why they vote.
+        It also created a polling place button to help voters more easily find where they need to go to cast their ballot on Tuesday, Nov. 6.
+        "With the 2018 elections around the corner, many organizations and companies across the country are going the extra mile to support our democratic process,"
+        Uber CEO Dara Khosrowshahi wrote in a blog post. "Using our technology and resources, we can help make it easier for every Uber rider in the US to get to 
+        their polling place at the push of a button.
+    </string>
+    <!--<string name="news_4_image_src">
+
+    </string>-->
+    
+</resources>
