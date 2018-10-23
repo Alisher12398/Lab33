@@ -1,4 +1,4 @@
-package com.android.lab33
+package com.android.lab2.databasetest
 
 import org.junit.Test
 

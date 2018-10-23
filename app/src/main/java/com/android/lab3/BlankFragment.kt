@@ -122,7 +122,7 @@ class BlankFragment : Fragment() {
             override fun onClick(view: View, position: Int) {
 //                Toast.makeText(context,"is selected!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(context, Activity2::class.java)
-                intent.putExtra("ExampleItem", actors[position])
+                intent.putExtra( "ExampleItem", actors[position])
 
                 startActivity(intent)
             }

@@ -1,4 +1,4 @@
-package com.android.lab33
+package com.android.lab2.databasetest
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.android.lab33", appContext.packageName)
+        assertEquals("com.android.lab2.databasetest", appContext.packageName)
     }
 }

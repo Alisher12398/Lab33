@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:layout_width="200dp"
+       android:layout_height="40dp"
+       android:id="@+id/name_edittext"
+       android:hint="name"
+       android:layout_marginBottom="10dp"
+
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/password_edittext"
+       app:layout_constraintVertical_chainStyle="packed"
+       />
+
+   <EditText
+       android:layout_width="200dp"
+       android:layout_height="40dp"
+       android:id="@+id/password_edittext"
+       android:hint="password"
+       android:layout_marginBottom="10dp"
+
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/name_edittext"
+       app:layout_constraintBottom_toTopOf="@id/buttons"
+       />
+
+   <android.support.constraint.ConstraintLayout
+       android:id="@+id/buttons"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/password_edittext"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+         <Button
+             android:layout_width="100dp"
+             android:layout_height="40dp"
+             android:id="@+id/button_adduser"
+             android:text="Add user"
+
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintEnd_toStartOf="@id/button_showusers"
+             />
+
+         <Button
+             android:id="@+id/button_showusers"
+             android:layout_width="100dp"
+             android:layout_height="40dp"
+             android:text="Show users"
+
+             app:layout_constraintStart_toEndOf="@id/button_adduser"
+             app:layout_constraintEnd_toStartOf="@id/button_deleteusers"/>
+
+       <Button
+           android:id="@+id/button_deleteusers"
+           android:layout_width="100dp"
+           android:layout_height="40dp"
+           android:text="Delete users"
+
+           app:layout_constraintStart_toEndOf="@id/button_showusers"
+           app:layout_constraintEnd_toEndOf="parent"/>
+
+
+   </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_deleteuser"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Deleteid"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_updateuser"
+        app:layout_constraintTop_toBottomOf="@id/buttons"/>
+
+    <Button
+        android:id="@+id/button_updateuser"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Update"
+
+        app:layout_constraintStart_toEndOf="@id/button_deleteuser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttons"/>
+
+    <ListView
+        android:id="@+id/listusers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+</android.support.constraint.ConstraintLayout>
