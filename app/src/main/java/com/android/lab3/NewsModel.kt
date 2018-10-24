@@ -3,6 +3,7 @@ package com.android.lab3
 import android.os.Parcel
 import android.os.Parcelable
 
+/*
 data class NewsModel(
         var title: String,
         var date: String,
@@ -41,5 +42,16 @@ data class NewsModel(
         override fun newArray(size: Int): Array<NewsModel?> {
             return arrayOfNulls(size)
         }
+    }
+}*/
+
+class NewsModel{
+    var title: String = ""
+    var date: String = ""
+    var text: String = ""
+    var image_url = 0
+
+    fun getImageUrl(): Int {
+        return image_url
     }
 }

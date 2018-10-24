@@ -96,6 +96,11 @@ class BlankFragment : Fragment() {
     image2.setImageResource(R.drawable.testimage2)*/
 
 
+    val db = Database(getActivity()!!.getApplicationContext())
+
+    val sqlitedatabase = db.writableDatabase
+
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val root = inflater.inflate(R.layout.fragment_blank, container, false)
@@ -104,10 +109,10 @@ class BlankFragment : Fragment() {
         /*val image2 = root.findViewById<ImageView>(R.id.media_image)
         image2.setImageResource(R.drawable.testimage2)*/
 
-        actors.add(NewsModel(news_1_title, news_1_date, news_1_text, R.drawable.news1))
+        /*actors.add(NewsModel(news_1_title, news_1_date, news_1_text, R.drawable.news1))
         actors.add(NewsModel(news_2_title, news_2_date, news_2_text, R.drawable.footbal))
         actors.add(NewsModel(news_3_title, news_3_date, news_3_text, R.drawable.wifi))
-        actors.add(NewsModel(news_4_title, news_4_date, news_4_text, R.drawable.uber))
+        actors.add(NewsModel(news_4_title, news_4_date, news_4_text, R.drawable.uber))*/
 
         var adapter2 = NewsAdapter(actors)
 
@@ -122,35 +127,12 @@ class BlankFragment : Fragment() {
             override fun onClick(view: View, position: Int) {
 //                Toast.makeText(context,"is selected!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(context, Activity2::class.java)
-                intent.putExtra( "ExampleItem", actors[position])
+                //intent.putExtra( "ExampleItem", actors[position])
 
                 startActivity(intent)
             }
 
         }))
-
-        /*adapter2.run {
-            setOnItemClickListener(object : NewsAdapter.OnItemClickListener {
-                @Override
-                override fun onItemClick(position: Int) {
-
-                    val toast = Toast.makeText(activity,
-                            "Проверка2", Toast.LENGTH_SHORT)
-                    toast.show()
-
-                    val toast2 = Toast.makeText(context,
-                            "Проверка", Toast.LENGTH_SHORT)
-                    toast2.show()
-
-
-                    val intent = Intent(context, Activity2::class.java)
-                    intent.putExtra("Example Item", actors.get(position))
-
-                    startActivity(intent)
-                }
-            })
-
-        }*/
 
 
         /*recycler.setOnClickListener(View.OnClickListener {

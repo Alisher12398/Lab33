@@ -23,7 +23,8 @@ class Database(context: Context) : SQLiteOpenHelper(context, "db", null, 1) {
         //db?.execSQL("create table Contact(id integer primary key autoincrement, name text, password integer)")
 
 
-        val CREATE_TABLE = "CREATE TABLE $TABLE_NAME ($ID INTEGER PRIMARY KEY, $NAME TEXT,$PASS TEXT);"
+        //val CREATE_TABLE = "CREATE TABLE $TABLE_NAME ($ID INTEGER PRIMARY KEY, $NAME TEXT,$PASS TEXT);"
+        val CREATE_TABLE = "CREATE TABLE Contact (id INTEGER PRIMARY KEY, name TEXT,password TEXT);"
         db.execSQL(CREATE_TABLE)
     }
 
@@ -31,6 +32,7 @@ class Database(context: Context) : SQLiteOpenHelper(context, "db", null, 1) {
 
     }
 
+/*
     companion object {
         private val DB_VERSION = 1
         private val DB_NAME = "db"
@@ -39,6 +41,7 @@ class Database(context: Context) : SQLiteOpenHelper(context, "db", null, 1) {
         private val NAME = "name"
         private val PASS = "password"
     }
+*/
 
 
 
